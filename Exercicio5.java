@@ -1,16 +1,15 @@
-package Lista5;
+package Lista5.bloco2;
 import java.util.Scanner;
 
 public class Exercicio5 {
     static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Digite o limite do seu número: ");
-        int limite = sc.nextInt();
-
-        for (int i = 0; i <= limite; i++) {
-            System.out.println(i);
+        int num = 7;
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(num + "x" + i + "=" + (num * i));
 
             sc.close();
         }
+
     }
 }
