@@ -4,11 +4,16 @@ import java.util.Scanner;
 public class Exercicio2 {
     static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        for (int i = 20; i >= 0; i--) {
-            System.out.println(i);
+        System.out.println("Digite o N: ");
+        int n = sc.nextInt();
 
-            sc.close();
+        int soma = 0;
+
+        for (int i = 1; i <= n; i++) {
+            soma += i;
         }
+        System.out.println("Soma = " + soma);
 
+        sc.close();
     }
 }

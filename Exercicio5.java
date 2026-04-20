@@ -4,11 +4,12 @@ import java.util.Scanner;
 public class Exercicio5 {
     static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Digite o limite: ");
-        int limite = sc.nextInt();
+        int num = 7;
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(num + "x" + i + "=" + (num * i));
 
-        for (int i = 0; i <= limite; i++) {
-            System.out.println(i % 5 == 0 ? i : "");
+            sc.close();
         }
+
     }
 }
